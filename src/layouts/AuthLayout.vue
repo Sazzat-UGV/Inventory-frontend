@@ -1,3 +1,5 @@
 <template>
-    Auth/Guest ar jonno
+    <div class="">
+   <router-view></router-view>
+    </div>
 </template>
