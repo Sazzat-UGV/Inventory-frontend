@@ -11,12 +11,12 @@ const router = createRouter({
       component: DefaultLayout,
       meta: { requiresAuth: true },
       children:[
-        {path: '/dashboard', name:'dashboard', component:()=>import('@/views/Dashboard.vue')}
+        {path: '/dashboard'  , name:'dashboard', component:()=>import('@/views/Dashboard.vue')}
       ]
     },
     {
       path: "/auth",
-      name: "/login",
+      redirect: "/login",
       component: AuthLayout,
       meta: { isGuest: true},
       children:[
